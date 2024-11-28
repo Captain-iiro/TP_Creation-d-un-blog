@@ -7,10 +7,10 @@ export function initNavbar() {
   const navList = document.createElement('ul');
   navList.classList.add('nav-list');
   const navItems = [
-    { href: '#Accueil', text: 'Accueil' },
-    { href: '#Articles', text: 'Articles' },
-    { href: '#À propos', text: 'À propos' },
-    { href: '#Contact', text: 'Contact' },
+    { href: 'index.html', text: 'Accueil' },
+    { href: 'articles.html', text: 'Articles' },
+    { href: 'apropros.html', text: 'À propos' },
+    { href: 'contact.html', text: 'Contact' },
   ];
   navItems.forEach(item => {
     const listItem = document.createElement('li');
@@ -23,8 +23,13 @@ export function initNavbar() {
   nav.appendChild(navList);
 
   const incons = document.createElement('div');
-  const twitter = createImageElement('src/img/twitter.svg');
-  const facebook_svg = createImageElement('src/img/Shape.svg');
+  const twitter = document.createElement('a');
+  twitter.title = 'twitter';
+  twitter.appendChild(createImageElement('src/img/twitter.svg'));
+  const facebook_svg = document.createElement('a');
+  facebook_svg.title = 'Facebook';
+  facebook_svg.appendChild(createImageElement('src/img/Shape.svg'));
+
   incons.classList.add('incons');
   incons.appendChild(facebook_svg);
   incons.appendChild(twitter);

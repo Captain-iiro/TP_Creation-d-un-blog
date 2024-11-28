@@ -1,6 +1,6 @@
 export const Header = () => {
     const header = document.createElement('header');
-    header.classList.add('header');
+    header.classList.add('topbar');
     header.appendChild(initNavbar())
     header.appendChild(createImageElement('src/img/image.png'));
     return header;
