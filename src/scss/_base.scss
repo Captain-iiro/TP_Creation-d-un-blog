@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'eesti';
+    font-size: 16px;
+    background: #fff;
+    color: #fff;
+    font-family: 'Montserrat', 'Cardo', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Tenor Sans', sans-serif;
+}
